@@ -82,3 +82,11 @@ body{
     padding: 0;
     left: 10px;
 }
+
+.loginform h5{
+    margin: 10px;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    text-decoration: none;
+}
