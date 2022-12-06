@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    text-align: center;
+    text-align: left;
     color: white;
     height: 89vh;
 }
@@ -63,7 +63,7 @@ li {
 }
 
 li:last-child {
-    font-size: 8px;
+    font-size: 18px;
     border-right: none;
 }
 
