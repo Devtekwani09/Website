@@ -1,0 +1,48 @@
+<?php
+session_start();
+if(!isset($_SESSION['user'])){
+  header('location:login.php');
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style1.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+
+<center>
+  <h2>
+  <div class="heading">Poornima Institute of Engineering and Technology
+  </div>
+  </h2>
+</center>
+
+<ul>
+  <li><a class="active" href="index1.php">Home</a></li>
+  <li><a href="indexnext.html" class="button">College Forms</a></div></li>
+  <li><a href="view.html" class="button">View Forms</a></div></li>
+  <li><a href="Results.html">Results</a></li>
+  <li ><a href="collegefee.html">College Fees</a></li>
+  <li><a href="contact.html">About Us</a></li>
+  <h2 class="text-light float-right">welcome <?php echo $_SESSION['user']; ?></h2>
+  <a href="logout.php">Logout</a>
+</ul>
+
+<div class="container">
+  <img src="PCE-Banner3.jpg" alt="Norway" style="width:100%;height:100%">
+  
+  
+</div>
+
+<!-- <div class="header">
+  <h4 ><font color="white">Student forms</font></h4>
+</div> -->
+
+</body>
+</html>

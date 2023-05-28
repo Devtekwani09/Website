@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 80%;
+    background-color: black;
+    padding: 34px;
+    margin: 23px;
+    margin: auto;
+}
+
+.container h3 , p{
+    text-align: center;
+}
+
+input{
+    width: 80%;
+    font-size: 25px;
+    margin: 11px;
+    padding: 7px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn{
+    color: white;
+    background: purple;
+    padding: 8px 12px;
+    font-size: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+}
