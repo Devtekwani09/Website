@@ -1,9 +1,4 @@
-<?php
-session_start();
-if(!isset($_SESSION['user'])){
-  header('location:login.php');
-}
-?>
+
 
 <!DOCTYPE html>
 <html>
@@ -22,7 +17,6 @@ if(!isset($_SESSION['user'])){
   </div>
   </h2>
 </center>
-
 <ul>
   <li><a class="active" href="index1.php">Home</a></li>
   <li><a href="indexnext.html" class="button">College Forms</a></div></li>
@@ -30,7 +24,7 @@ if(!isset($_SESSION['user'])){
   <li><a href="Results.html">Results</a></li>
   <li ><a href="collegefee.html">College Fees</a></li>
   <li><a href="contact.html">About Us</a></li>
-  <h2 class="text-light float-right">welcome <?php echo $_SESSION['user']; ?></h2>
+  <!-- <h2 class="text-light float-right">welcome <?php echo $_SESSION['user']; ?></h2> -->
   <a href="logout.php">Logout</a>
 </ul>
 
